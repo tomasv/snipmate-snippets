@@ -904,25 +904,29 @@ snippet tref
 
 #rspec
 snippet it
-	it "${1:spec_name}" do
-		${2}
+	it '${1:spec_name}' do
+	  ${2}
 	end
 snippet itp
 	it "${1:spec_name}"
 	${2}
+snippet des
+	describe '${1}' do
+	  ${2}
+	end
 snippet desc
 	describe ${1:class_name} do
-		${2}
+	  ${2}
 	end
-snippet cont
-	context "${1:message}" do
-		${2}
+snippet con
+	context '${1:message}' do
+	  ${2}
 	end
 snippet bef
-	before :${1:each} do
-		${2}
+	before do
+	  ${2}
 	end
 snippet aft
-	after :${1:each} do
-		${2}
+	after do
+	  ${2}
 	end
